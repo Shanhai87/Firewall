@@ -1,0 +1,9 @@
+ 	=> ACCEPT	src: 9.0.2.11		dst: 1.1.1.1	proto: udp
+ 	=> DROP		src: 9.0.2.12		dst: 1.1.1.1	proto: udp
+	=> ACCEPT	src: 9.0.2.12		dst: 8.8.8.8	proto: tcp
+
+	=> ACCEPT	src: 9.0.2.13
+	=> DROP							dst: 1.2.3.4	proto: udp
+	=> ACCEPT						dst: 1.2.3.4
+
+	=> ACCEPT	src: 9.0.5.0/24
